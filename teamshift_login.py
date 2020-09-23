@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
@@ -7,8 +6,8 @@ import time
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-driver = webdriver.Chrome(executable_path='./location/of/chromedriver')
-
+driver = webdriver.Chrome(executable_path='./gontijo/chromedriver/chromedriver')
+driver.maximize_window()
 url = 'https://teamshift.crossknowledge.com/'
 driver.get(url)
 time.sleep(1)
@@ -39,4 +38,3 @@ print("Success!")
 print("clicking on Login Button")
 driver.find_element_by_xpath(login_btn).click()
 print("success!")
-
