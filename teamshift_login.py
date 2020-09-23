@@ -12,6 +12,7 @@ driver = webdriver.Chrome(executable_path='./location/of/chromedriver')
 url = 'https://teamshift.crossknowledge.com/'
 driver.get(url)
 time.sleep(1)
+
 #Elements Xpaths
 xpath_log_in_button = '/html/body/main/header/nav/div[2]/div/div/button'
 email_input = '//*[@id="login-form__login"]'
